@@ -47,7 +47,7 @@ create_pages:
     title: ''
 custom_css: []
 custom_js: []
-data_edit_url: 'https://github.com/open-sdg-nepal/data/tree/develop/data'
+data_edit_url: 'https://github.com/brockfanning/sdg-data-nepal-demo/tree/develop/data'
 data_fields:
   units: UNIT_MEASURE
   series: SERIES
@@ -128,9 +128,9 @@ hide_single_unit: false
 indicator_config_form:
   enabled: true
   dropdowns: []
-  repository_link: 'https://github.com/open-sdg-nepal/data/tree/develop/indicator-config'
+  repository_link: 'https://github.com/brockfanning/sdg-data-nepal-demo/tree/develop/indicator-config'
   translation_link: >-
-    https://github.com/open-sdg-nepal/data/tree/develop/translations/[language]/[group].yml
+    https://github.com/brockfanning/sdg-data-nepal-demo/tree/develop/translations/[language]/[group].yml
 indicator_data_form:
   enabled: false
   repository_link: ''
@@ -201,7 +201,7 @@ menu:
   - path: /news
     translation_key: menu.updates
     dropdown: []
-metadata_edit_url: 'https://github.com/open-sdg-nepal/data/tree/develop/meta'
+metadata_edit_url: 'https://github.com/brockfanning/sdg-data-nepal-demo/tree/develop/meta'
 metadata_tabs: []
 news:
   category_links: false
@@ -209,7 +209,7 @@ non_global_metadata: indicator.national_metadata
 progress_status:
   status_heading: ''
   status_types: []
-remote_data_prefix: 'https://open-sdg-nepal.github.io/data'
+remote_data_prefix: 'https://brockfanning.github.io/sdg-data-nepal-demo'
 reporting_status:
   title: ''
   description: ''
@@ -227,15 +227,15 @@ reporting_status:
     - value: notapplicable
       label: status.not_applicable
       hide_on_goal_pages: false
-repository_url_data: 'https://github.com/open-sdg-nepal/data'
-repository_url_site: 'https://github.com/open-sdg-nepal/site'
+repository_url_data: 'https://github.com/brockfanning/sdg-data-nepal-demo'
+repository_url_site: 'https://github.com/brockfanning/sdg-site-nepal-demo'
 search_index_boost: []
 search_index_extra_fields: []
 series_toggle: true
 site_config_form:
   enabled: true
   dropdowns: []
-  repository_link: 'https://github.com/open-sdg-nepal/site/tree/develop/_data'
+  repository_link: 'https://github.com/brockfanning/sdg-site-nepal-demo/tree/develop/_data'
   translation_link: ''
 time_series_attributes:
   - field: COMMENT_TS
