@@ -1,0 +1,45 @@
+# Jekyll configuration for Open SDG platform
+# Doing the Quick start? Here are the settings to update during installation:
+#
+# Replace the baseurl with the name of this repository. For example, if the repository is named
+# "my-site-repository", then update the baseurl like so:
+# baseurl: "/my-site-repository"
+baseurl: "/site"
+
+# Tell the Remote Theme plugin to use the Open SDG platform (Jekyll theme).
+# Recommended: set this to a particular "release" of Open SDG. For example:
+remote_theme: open-sdg/open-sdg@2.0.0
+
+# Replace this title as needed.
+title: Indicators For The Sustainable Development Goals
+url: ""
+environment: staging
+
+# Pages
+collections:
+  pages:
+    output: true
+    permalink: /:path/
+  posts:
+    output: true
+    permalink: /news/:year/:month/:day/:title.html
+  indicators:
+    output: true
+  goals:
+    output: true
+
+# Tell Jekyll to use the Remote Theme plugin.
+plugins:
+  - jekyll-remote-theme
+  - jekyll-open-sdg-plugins
+
+# Exclude some files/folders.
+exclude:
+  - vendor
+  - scripts
+  - remotedata
+  - Gemfile
+  - Gemfile.lock
+  - README
+  - README.md
+  - LICENSE
