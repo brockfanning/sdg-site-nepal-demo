@@ -1,4 +1,4 @@
-﻿accessible_charts: true
+accessible_charts: true
 accessible_tabs: true
 analytics:
   ua: ''
@@ -153,11 +153,27 @@ languages:
   - ne
 languages_public: []
 logos: []
-map_layers: []
+map_layers:
+  -
+    # The subfolder under 'geojson' in the data repository holding the GeoJSON files:
+    subfolder: provinces
+    # The label to use in the "Download GeoJSON" button:
+    label: Download province GeoJSON
+    # The minimum zoom at which this layer should be visible.
+    # For example, if this "min_zoom" is set to 4, then this
+    # layer will be invisible at zoom level 3 or less.
+    min_zoom: 0
+    # The maximum zoom at which this layer should be visible.
+    # For example, if this "max_zoom" is set to 8, then this
+    # layer will be invisible at zoom level 9 or more.
+    max_zoom: 20
+    # Whether or not these boundaries should display statically
+    # on lower layers.
+    staticBorders: false
 map_options:
-  minZoom: 5
-  maxZoom: 10
-  tileURL: ''
+  minZoom: 0
+  maxZoom: 20
+  tileURL: 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png'
   tileOptions:
     id: ''
     accessToken: ''
